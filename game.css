@@ -1,0 +1,201 @@
+#startPage{
+    background-image: url("images/startPage3.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+	color: LawnGreen;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 15px;
+	top: 500px;
+	
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+ 
+    width: 16px;
+    height: 16px;
+ 
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: lawngreen;
+    box-shadow: inset 1px 2px 3px 0px rgba(0, 0, 0, .5), 0px 0px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+    border-radius: 8px;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#gamePage{
+    background: url("images/gamePage2.jpg");
+    text-align: center;
+    width: 400px;
+    height: 660px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -330px;
+    margin-left: -200px;
+}
+
+#Timer{
+    float:left;
+    margin-bottom: 1%;
+    color: #BDE696;
+    font-size: 2.5em;
+}
+
+#container
+{
+    height: 600px;
+    position: relative;
+    width: 400px;
+	color: #BDE696;
+}
+
+#controls
+{
+    bottom: 100px;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+}
+
+
+#start{
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 15px;
+	top: 400px;
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+	
+	//border: none !important;
+	font-family: Courier New;
+	border-color: #8FC35E;;
+	font-size: 20px;
+	color: #D6F2BB;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	background: transparent;
+}
+
+#restart, #newGame {
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    font-family: "Courier New";
+    color: #BDE696;
+    font-size: 20px;
+    background: #38a33d;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+	background: transparent;
+}
+
+#Pause {
+	
+  	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+	font-family: Courier New;
+	color: #BDE696;
+	border-color: #8FC35E;
+	font-size: 20px;
+	background: #38a33d;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	right: 35px;
+	background: transparent;
+	display: inline-block;
+        cursor: pointer;
+        position: relative;
+	top: 0px;
+}
+
+
+#score{
+	position: absolute;
+	top: -28px;
+	right: 0px;
+        float:right;
+        margin-bottom: 5%;
+	color: #BDE696;
+	font-size: 1.75em;
+}
+
+#myCanvas{
+     width: 400px; 
+     height: 600px;
+     border: 1px solid;
+     clear: both;
+}
+
+#highScore {
+	font-size: 1.75em;
+}
+
+@media (max-height: 600px), (max-width: 400px) {
+    #startPage {
+		background-image: url("startPageSmall.png");
+    }
+	#highScore {
+		font-size: 1.2em;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+}
+
+	#start{
+    	cursor: pointer;
+    	position: absolute;
+		top: 300px;
+		left: 60px;
+		//right: 200px;
+}
+
+
+label {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 15px;
+	top: 350px;
+	right: 90px;
+
+}
+
+}

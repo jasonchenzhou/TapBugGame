@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="game.css" type="text/css" rel="stylesheet"/>
+        <title>Tap Tap Bug</title>
+    </head>
+    <body>
+        <div id="startPage">
+	    <div class="checkbox">
+            <input type="radio" id="level1" checked="checked" name="group"/>
+			<label for="level1">Level 1</label>
+            <input type="radio" id="level2" name="group"/>
+			<label for="level2">Level 2</label>
+            <br>
+            <button type="button" id="start">Start</button>
+	    </div>
+            <p id="highScore"></p>
+        </div>
+        
+        <div id="gamePage">
+            <div id="Timer"></div>
+            <button type="button" id="Pause">Pause</button>
+            <p id="score">Score: 0</p>
+			<div id="container">
+	        <canvas id="canvas" width="400" height="600"></canvas>
+			<menu id="controls">
+			    <div id="gameOver">    
+			        <button type="button" id="restart">Restart</button>
+			        <button type="button" id="newGame">New Game</button>
+		        </div>    
+ 		    </menu>
+		</div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
